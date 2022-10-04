@@ -1,0 +1,29 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "@nawimi/mongo": [
+        "packages/mongo/lib"
+      ],
+      "@nawimi/tracer": [
+        "packages/tracer/lib"
+      ],
+      "@nawimi/tracer/lib/*": [
+        "packages/tracer/lib/*"
+      ],
+      "@nawimi/utils": [
+        "packages/utils/lib"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./packages/**/*",
+    "./*.js",
+    "./*.ts",
+    "./.eslintrc.js"
+  ]
+}
